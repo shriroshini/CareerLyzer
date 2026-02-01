@@ -1,0 +1,21 @@
+{
+  "name": "careerlyzer",
+  "version": "1.0.0",
+  "description": "AI-Powered Smart Resume Analyzer and Career Suggestion Platform",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd backend && npm start",
+    "seed": "cd backend && npm run seed",
+    "install-deps": "npm install && cd backend && npm install && cd ../client && npm install"
+  },
+  "keywords": ["resume", "ai", "career", "mern", "analyzer"],
+  "author": "CareerLyzer Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
